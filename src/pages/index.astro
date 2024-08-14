@@ -1,0 +1,119 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import ThemeToggleButton from "../components/ThemeToggleButton.astro";
+---
+
+<Layout>
+  <main class="parent">
+    <div class="div2">
+      <Card
+        href="https://astro.build/integrations/"
+        title="Integrations"
+        body="Supercharge your project with new frameworks and libraries."
+      />
+    </div>
+    <div class="div3">
+      <Card
+        href="https://astro.build/integrations/"
+        title="Integrations"
+        body="Supercharge your project with new frameworks and libraries."
+      />
+    </div>
+    <div class="div4">
+      <Card
+        href="https://astro.build/integrations/"
+        title="Integrations"
+        body="Supercharge your project with new frameworks and libraries."
+      />
+    </div>
+    <div class="div5">
+      <Card
+        href="https://astro.build/integrations/"
+        title="Integrations"
+        body="Supercharge your project with new frameworks and libraries."
+      />
+    </div>
+    <div class="div7">
+      <Card
+        href="https://astro.build/integrations/"
+        title="Integrations"
+        body="Supercharge your project with new frameworks and libraries."
+      />
+    </div>
+    <div class="div8">
+      <Card
+        href="https://astro.build/integrations/"
+        title="Integrations"
+        body="Supercharge your project with new frameworks and libraries."
+      />
+    </div>
+    <div class="div9">
+      <Card
+        href="https://astro.build/integrations/"
+        title="Integrations"
+        body="Supercharge your project with new frameworks and libraries."
+      />
+    </div>
+    <div class="div10">
+      <ThemeToggleButton> Cambiar Tema </ThemeToggleButton>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 8px;
+  }
+
+  .div2 {
+    grid-column: span 6 / span 6;
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+  }
+
+  .div3 {
+    grid-column: span 6 / span 6;
+    grid-column-start: 2;
+    grid-row-start: 4;
+  }
+
+  .div4 {
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 5;
+  }
+
+  .div5 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 8;
+  }
+
+  .div7 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 5;
+    grid-row-start: 9;
+  }
+
+  .div8 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 10;
+  }
+
+  .div9 {
+    grid-column: span 6 / span 6;
+    grid-column-start: 2;
+    grid-row-start: 11;
+  }
+
+  .div10 {
+    grid-column: span 8 / span 8;
+    grid-row-start: 12;
+  }
+</style>

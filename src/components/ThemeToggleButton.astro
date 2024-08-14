@@ -1,0 +1,27 @@
+---
+// src/components/ThemeToggleButton.astro
+---
+
+<button id="theme-toggle" class="theme-toggle-button">Toggle Theme</button>
+
+<script type="module">
+  document.getElementById("theme-toggle").addEventListener("click", () => {
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", newTheme);
+  });
+</script>
+<style>
+  .theme-toggle-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .theme-toggle-button:hover {
+    background-color: #0056b3;
+  }
+</style>
